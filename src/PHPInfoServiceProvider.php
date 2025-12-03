@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\PHPInfo;
+namespace Ladmin\PHPInfo;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -12,7 +12,7 @@ class PHPInfoServiceProvider extends ServiceProvider
     public function boot(PHPInfo $extension)
     {
         if (! PHPInfo::boot()) {
-            return ;
+            return;
         }
 
         if ($views = $extension->views()) {
@@ -20,7 +20,7 @@ class PHPInfoServiceProvider extends ServiceProvider
         }
 
         $this->app->booted(function () {
-            PHPInfo::routes(__DIR__.'/../routes/web.php');
+            PHPInfo::routes(__DIR__ . '/../routes/web.php');
         });
     }
 }

@@ -1,7 +1,7 @@
 <?php
 
-use Encore\Admin\Layout\Content;
-use Encore\PHPInfo\PHPInfo;
+use Ladmin\Layout\Content;
+use Ladmin\PHPInfo\PHPInfo;
 
 $path = PHPInfo::config('path', 'phpinfo');
 

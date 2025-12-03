@@ -10,7 +10,7 @@ The laravel-admin version of the `phpinfo()` function, Inspired by [nova-phpinfo
 ## Installation
 
 ```bash
-composer require laravel-admin-ext/phpinfo
+composer require php-panel/ladmin-ext-phpinfo
 ```
 
 If you want to add a link entry in the left menu, use the following command to import
@@ -43,14 +43,6 @@ In the `extensions` section of the `config/admin.php` file, add configurations
 ## Usage
 
 Open `http://localhost/admin/phpinfo` in your broswer after install
-
-## Donate
-
-> Help keeping the project development going, by donating a little. Thanks in advance.
-
-[![PayPal Me](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/zousong)
-
-![-1](https://cloud.githubusercontent.com/assets/1479100/23287423/45c68202-fa78-11e6-8125-3e365101a313.jpg)
 
 License
 ------------

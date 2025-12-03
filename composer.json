@@ -1,34 +1,38 @@
 {
-    "name": "laravel-admin-ext/phpinfo",
+    "name": "php-panel/ladmin-ext-phpinfo",
     "description": "Show php information in laravel-admin",
     "type": "library",
-    "keywords": ["laravel-admin", "extension", "phpinfo"],
-    "homepage": "https://github.com/laravel-admin-ext/phpinfo",
+    "keywords": [
+        "laravel-admin",
+        "extension",
+        "phpinfo"
+    ],
+    "homepage": "https://github.com/php-panel/ladmin-ext-phpinfo",
     "license": "MIT",
     "authors": [
         {
-            "name": "song",
-            "email": "zosong@126.com"
+            "name": "leeqvip",
+            "email": "leeqvip@gmail.com"
         }
     ],
     "require": {
-        "php": ">=7.0.0",
-        "encore/laravel-admin": "~1.6"
+        "php": ">=8.2",
+        "laravel/framework": ">=12.0",
+        "php-panel/laravel-admin": ">=3.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "~6.0"
+        "phpunit/phpunit": "~11.0"
     },
     "autoload": {
         "psr-4": {
-            "Encore\\PHPInfo\\": "src/"
+            "Ladmin\\PHPInfo\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Encore\\PHPInfo\\PHPInfoServiceProvider"
+                "Ladmin\\PHPInfo\\PHPInfoServiceProvider"
             ]
-
         }
     }
 }

@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\PHPInfo;
+namespace Ladmin\PHPInfo;
 
-use Encore\Admin\Extension;
+use Ladmin\Extension;
 
 class PHPInfo extends Extension
 {
@@ -31,7 +31,6 @@ class PHPInfo extends Extension
             collect($matches)->each(function ($match) use (&$phpinfo) {
                 if (strlen($match[1])) {
                     $phpinfo[$match[1]] = collect();
-
                 } elseif (isset($match[3])) {
                     $keys = array_keys($phpinfo);
 
